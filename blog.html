@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Deniz Sarıbayır</title>
+		<meta name="description" content="Sakarya Üniversitesi Bilgisayar Mühendisliği bölümü mezunuyum.
+			Kodlamaya ve bilgisayarlara ilgi duyuyorum. 6 yaşımdan beri bilgisayar oyunları
+			ve satranç oynuyorum. İşimi yaparken dikkatli olmaya ve detayları atlamamaya özen gösteririm. 
+			Lise yıllarımın başından beri en büyük hayalim herkesin oynadığı bir mobil oyun veya
+			bilgisayar oyunu yapmaktır. Bu hayalimi gerçekleştirme yolunda ilerlemek istiyorum."/>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/aos.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles/main.css" rel="stylesheet">
+		<link rel="shortcut icon" href="favicon.ico"> 
+		<link rel="stylesheet" href="css/starwars-glyphicons.css">
+		<style type="text/css">@font-face {font-family:'aurebesh';src:url(https://lingojam.com/font/translators/aurebesh.ttf);}</style>
+	</head>
+	<body id="top">
+		<header>
+			<div class="profile-page sidebar-collapse">
+				<nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+					<div class="container">
+						<div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip"></a>
+							<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+						</div>
+						<div class="col-md-3">
+							<a class="nav-link smooth-scroll" href="index.html"><img src = "images/logo.png" width="100%" alt="logo"/></a>
+						</div>
+						<div class="collapse navbar-collapse justify-content-end" id="navigation">
+							<ul class="navbar-nav">
+								<li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">Ana Sayfa</a></li>
+								<li class="nav-item"><a class="nav-link smooth-scroll" href="#about">Hakkımda</a></li>
+								<li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Galeri</a></li>
+								<li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">İletişim</a></li>
+								<li class="dropdown nav-item">
+									<a href="" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Blog </a>
+									<div class="dropdown-menu dropdown-menu-right navbar-expand-lg navbar-transparent bg-primary"  style="color:white">
+										<a href="blog.html" class="dropdown-item">Tüm Projelerim</a>
+										<a href="oyunlar.html" class="dropdown-item">Oyunlarım</a>
+									</div>
+								</li>
+								<li class="dropdown nav-item">
+									<a href="" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Türkçe </a>
+									<div class="dropdown-menu dropdown-menu-right navbar-expand-lg navbar-transparent bg-primary"  style="color:white">
+										<a href="index.html" class="dropdown-item">Türkçe</a>
+										<a href="indexen.html" class="dropdown-item">English</a>
+										<a href="indexaurabesh.html" class="dropdown-item"><i class="swg swg-starwars" style="font-size:xxx-large"></i></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="page-content">
+			<div>
+				<div class="profile-page">
+					<div class="wrapper">
+						<div class="page-header page-header-large" filter-color="#581845">
+							<div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
+							<div class="container">
+								<div class="content-center">
+									<div class="cc-profile-image"><a href="index.html"><img src="images/profile.jpg" alt="Image"/></a></div>
+									<div class="h1 title">Deniz Sarıbayır</div>
+									<p class="category text-white">Blog</p>
+									<p class="category text-white">(Tüm Projelerim)</p>
+								</div>
+							</div>
+							<div class="section">
+								<div class="container">
+									<div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/chareless" rel="tooltip" title="Facebook'ta takip edin!" target="_blank"><i class="fa fa-facebook fa-2x"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://linktr.ee/mrchareless" rel="tooltip" title="Sosyal medyada takip edin!" target="_blank"><i class="fa fa-globe fa-2x"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/mrchareless" rel="tooltip" title="Instagram'da takip edin!" target="_blank"><i class="fa fa-instagram"></i></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="icerik">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-8 col-md-8">
+									<div class="h2 mt-0 title">Tüm İçerikler</div>
+									<a href="#nesneyonelimli"><p><h6>Nesne Yönelimli Analiz ve Tasarım Projesi</h6></p></a>
+									<a href="#dijitalgunluk"><p><h6>Dijital Günlük</h6></p></a>
+									<a href="#randomtools"><p><h6>Rastgele Araçlar</h6></p></a>
+									<a href="#discordbot"><p><h6>CharelessBot</h6></p></a>
+									<a href="#arduinosicaklik"><p><h6>Arduino Sıcaklık Ölçme</h6></p></a>
+									<a href="#ortalamaexcel"><p><h6>Ortalama Hesaplama Excel</h6></p></a>
+									<a href="#etombala"><p><h6>E-Tombala</h6></p></a>
+									<a href="#ssgame"><p><h6>Spaceship Starcraft</h6></p></a>
+									<a href="#knapsack"><p><h6>Sırt Çantası Problemi Yazılımı</h6></p></a>
+									<a href="#rth"><p><h6>Road To Heroism</h6></p></a>
+									<a href="#both"><p><h6>Beginning of The Heroism</h6></p></a>
+									<a href="#randomtoolsandroid"><p><h6>Rastgele Araçlar - Android</h6></p></a>
+									<a href="#ssgame2"><p><h6>Spaceship Starcraft 2 : Lightbringers</h6></p></a>
+									<a href="#picker3d"><p><h6>Picker3D Clone</h6></p></a>
+									<a href="#pizza"><p><h6>Pizza Deliver Guy</h6></p></a>
+									<a href="#ssgame3"><p><h6>Spaceship Starcraft 3 : Forgotten</h6></p></a>
+									<p><h6>---------------------------------------</h6></p>
+									<a href="#yorum"><p><h6>Yorum Köşesi</h6></p></a>
+									<a href="#ziyaretci"><p><h6>Ziyaretçi Sayısı</h6></p></a>
+								</div>
+								<div class="card-body col-lg-4 col-md-4">
+									<div class="h2 mt-0 title">Yenilikler</div>
+									<a href="#ssgame3"><p><h6>Spaceship Starcraft 3</h6></a>YAKINDA</p>
+									<a href="#ssgame2"><p><h6>Spaceship Starcraft 2 v1.0</h6></a>22.01.2023 20:59:39</p>
+									<a href="#ssgame"><p><h6>Spaceship Starcraft v4.9</h6></a>22.01.2023 19:27:03</p>
+									<a href="#randomtoolsandroid"><p><h6>Rastgele Araçlar - Android v1.4</h6></a>31.10.2022 22:57:18</p>
+									<a href="#rth"><p><h6>Road To Heroism v1.6</h6></a>04.10.2022 00:06:33</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="ssgame3">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Spaceship Starcraft 3 : Forgotten (YAPIM AŞAMASINDA)</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="spaceshipstarcraft3.html"><img src="images/ssgame/ss3/iconss3.png" width="500"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış platform türünde 2D bir android oyunudur. Hikayesi <strong><a href="#ssgame">"Spaceship Starcraft"</a></strong> evrenindeki karanlık boyutta geçer.
+														Hala <strong>yapım aşamasında</strong> olan oyunda amaç engellere takılmadan karanlık boyuttan kaçmaktır.
+													</p>
+													<p><strong>Projeyi Görüntüle: <a href="https://github.com/chareless" target="_blank">https://github.com/chareless</a></strong></p>
+													<p><strong>Son Sürümü İndir : <a href="" target="_blank">Play Store üzerinden indirmek için tıklayın.</a></strong></p>
+													<p>Çıkış Tarihi : <h7>00.00.0000 00:00:00</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>00.00.0000 00:00:00</h7></p>
+													<p>Sürüm : <h7>1.0</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="pizza">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Pizza Deliver Guy</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<img src="favicon.ico" width="500">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış 3D hypercasual oyunudur. Yol üstündeki kamyonlardan pizza toplayıp müşterilere dağıtılmaktadır. Case study çalışmasıdır.
+													</p>
+													<p><strong>Projeyi Görüntüle: <a href="https://github.com/chareless/Pizza-Delivery-Guy" target="_blank">https://github.com/chareless/Pizza-Delivery-Guy</a></strong></p>
+													<p>Eklenme Tarihi : <h7>10.09.2022 20:27:47</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="picker3d">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Picker3D Clone</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<img src="favicon.ico" width="500">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış 3D hypercasual oyunudur. Yol üstünde bulunan objelerden belirli sayılarda toplanarak seviye atlanır. Case study çalışmasıdır.
+													</p>
+													<p><strong>Projeyi Görüntüle: <a href="https://github.com/chareless/RollicProject" target="_blank">https://github.com/chareless/RollicProject</a></strong></p>
+													<p>Eklenme Tarihi : <h7>02.08.2022 20:52:32</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="ssgame2">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Spaceship Starcraft 2 : Lightbringers</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="spaceshipstarcraft2.html"><img src="images/ssgame/ss2/iconss2.png" width="500"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+												<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış platform türünde 2D bir android oyunudur. Hikayesi <strong><a href="#ssgame">"Spaceship Starcraft"</a></strong> evrenindeki 
+													karanlık boyutta geçer. Amaç düz bir platformda karşımıza çıkan düşmanları yok etmektir.
+													</p>
+													<p><strong>Son Sürümü İndir : <a href="https://play.google.com/store/apps/details?id=com.saribayirdeniz.SpaceshipStarcraft2" target="_blank">Play Store üzerinden indirmek için tıklayın.</a></strong></p>
+													<p>Çıkış Tarihi : <h7>22.01.2023 20:59:39</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>22.01.2023 20:59:39</h7></p>
+													<p>Sürüm : <h7>1.0</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="randomtoolsandroid">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Rastgele Araçlar - Android</div>
+									<p class="category text-black">For Android</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="randomtoolsandroid.html"><img src="images/dice.ico"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong><a href="randomtools.html">Rastgele Araçlar</a> uygulamasının Android sürümüdür. Windows sürümünden farklı olarak hatırlatıcı,
+														koronavirüs tablosu, döviz işlemleri, aritmetik işlemler, zaman çevirici, ip adresi gösterme özelliklerini içermez ancak harita üzerinden
+														yer kaydetme özelliği içerir. 
+													</p>
+													<p><strong>Son Sürümü İndir : <a href="https://play.google.com/store/apps/details?id=com.deniz.randomtools" target="_blank">https://play.google.com/store/apps/details?id=com.deniz.randomtools</a></strong></p>
+													<p>Çıkış Tarihi : <h7>30.06.2022 12:13:48</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>31.10.2022 22:57:18</h7></p>
+													<p>Sürüm : <h7>1.4</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="both">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Beginning of The Heroism</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<img src="images/both.png" width="500">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış platform türünde 2D bir android oyunudur. <strong><a href="#rth">"Road to Heroism"</a></strong> oyunun öncesini konu alır.
+														3 haritadaki düşmanları da yenip zindandan çıkmalıyız. Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü bitirme projemizdir.
+													</p>
+													<p><strong>Projeyi Görüntüle: <a href="https://github.com/chareless/beginning-of-the-heroism" target="_blank">https://github.com/chareless/beginning-of-the-heroism</a></strong></p>
+													<p><strong>Son Sürümü İndir : <a href="https://play.google.com/store/apps/details?id=com.DOM.BeginningofTheHeroism" target="_blank">Play Store üzerinden indirmek için tıklayın.</a></strong></p>
+													<p>Çıkış Tarihi : <h7>29.05.2022 16:25:00</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>08.07.2022 20:56:41</h7></p>
+													<p>Sürüm : <h7>1.5</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="rth">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Road To Heroism</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<img src="images/rth.png" width="500">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış 2D bir android oyunudur. Oyunda 10 aşama vardır. Her aşamada karşımıza gelen yaratıkları yenmemiz gerekmektedir. Her 3 aşamada bir
+														büyük yaratıklarla ve son aşamada ejderha ile savaşmalı ve kasabayı kurtarmalıyız. Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü tasarım projemizdir.
+													</p>
+													<p><strong>Son Sürümü İndir : <a href="https://play.google.com/store/apps/details?id=com.DOM.RoadToHeroism" target="_blank">Play Store üzerinden indirmek için tıklayın.</a></strong></p>
+													<p>Çıkış Tarihi : <h7>27.12.2021 15:20:42</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>04.10.2022 00:06:33</h7></p>
+													<p>Sürüm : <h7>1.6</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="knapsack">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Sırt Çantası Problemi Yazılımı</div>
+									<p class="category text-black">For Wındows</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<img src="images/knapsack.ico">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Sırt çantası ya da bilinen diğer adıyla torba problemi (knapsack problem), bir optimizasyon problemidir. Problemin tanımı şöyledir:
+														Ağırlıkları (w) ve değeri/katkısı (v) bilinen n tane nesne, kapasitesi W olan bir çantaya koyulacaktır. Çantayı kapasitesini aşmayacak şekilde en değerli olan nesnelerle doldurmak için 
+														nesnelerden hangileri çantaya koyulmalıdır?
+													</p>
+													<p><strong>Projeyi Görüntüle: <a href="https://github.com/chareless/Knapsack-Problem" target="_blank">https://github.com/chareless/Knapsack-Problem</a></strong></p>
+													<p>Çıkış Tarihi : <h7>24.12.2021 00:47:58</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>24.12.2021 00:47:58</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="ssgame">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Spaceship Starcraft</div>
+									<p class="category text-black">For Androıd</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="spaceshipstarcraft.html"><img src="images/ssgame/ss1/iconss.png"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Unity kullanılarak programlanmış uzay temalı 2D bir android oyunudur. Oyunda 9 aşama vardır. Her aşamada karşımıza gelen uzay gemilerinin yok edilmesi gerekmektedir.
+														Her 3 aşamada bir dev uzay yaratıkları ile savaşmalı ve evreni kurtarmalıyız.
+													</p>
+													<p><strong>Son Sürümü İndir : <a href="https://play.google.com/store/apps/details?id=com.saribayirdeniz.SpaceshipStarcraft" target="_blank">Play Store üzerinden indirmek için tıklayın.</a></strong></p>
+													<p>Çıkış Tarihi : <h7>12.12.2021 01:50:18</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>22.01.2023 19:27:03</h7></p>
+													<p>Sürüm : <h7>4.9</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="etombala">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">E-Tombala</div>
+									<p class="category text-black">For Wındows</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="etombala.html"><img src="images/tombala.ico"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Pandemi sebebiyle yılbaşında uzaktan eğlenmek zorunda kalan tüm tombala severlerin kendi 
+														discord sunucularında ekran paylaşarak birbirleri ile oynayabilmeleri için kodlanmıştır.
+													</p>
+													<p><strong>Son Sürümü İndir : <a href="https://github.com/chareless/ETombala-for-Windows/archive/refs/heads/main.zip" target="_blank">https://github.com/chareless/ETombala-for-Windows/archive/refs/heads/main.zip</a></strong></p>
+													<p>Çıkış Tarihi : <h7>19.04.2021 21:50:18</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>14.06.2021 03:26:19</h7></p>
+													<p>Sürüm : <h7>1.3</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="ortalamaexcel">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Ortalama Hesaplama Excel</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<img src="images/excel.ico">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Üniversite öğrencileri için dönem ortalaması, genel ortalama ve ders içi ortalama hesaplamaya yaran bir excel tablosu. Renkli olan tablo içerikleri
+														(İçerik Adı, Harf Notu, Ders Kredisi, Oran, Not) kullanıcı tarafından girilir ve Katsayı sayfasından çekilen harf notu karşılıkları ile uygun ortalamalar hesaplanır.
+														FD veya FF olan dersler için ortalama hesaplanmamaktadır.(En fazla 4 yıllık üniversiteler ve dönem başı en fazla 6 ders için tasarlanmıştır.)
+													</p>
+													<p><strong>İndirme Linki : <a href="https://github.com/chareless/Ortalama-Excel/archive/refs/heads/main.zip" target="_blank">https://github.com/chareless/Ortalama-Excel/archive/refs/heads/main.zip</a></strong></p>
+													<p>Çıkış Tarihi : <h7>14.01.2021 15:10:23</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>22.12.2022 22:44:21</h7></p>
+													<p>Sürüm : <h7>1.2</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="arduinosicaklik">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Arduino Sıcaklık Ölçme</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="arduinosicaklik.html"><img src="images/arduino.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>NodeMcu kartına LM35 ısı sensörü ve 3 adet led bağlıyoruz. Arduino programı üzerinden wifi, ThingSpeak ve Blynk bağlantılarını ayarlıyoruz. Sensörden sıcaklık değerinin 
+														ölçülmesi için gerekli işlemleri kod üzerinden yazıyoruz ve ThingSpeak'e gönderiyoruz. Sıcaklığa uygun renkte ledlerin yanması için gerekli kontrolü de ekledikten sonra
+														yazdığımız kodu karta aktarıyoruz. Sıcaklık değerine göre mavi, yeşil ve kırmızı renkli ledler yanıyor. ThingSpeak üzerinden sıcaklık grafiği görüntüleniyor.
+														20 derecenin altındaki oda sıcaklığında mavi led, 35 derecenin üstündeki oda sıcaklığında kırmızı led, 20-35 arasındaki değerlerde ise yeşil led yanmaktadır.
+														Oda sıcaklığını ThingSpeak üzerinden görüntüleyebildiğimiz gibi Blynk uygulamasından da telefon üzerinden takip edebiliriz.
+													</p>
+													<p><h7>08.01.2021 20:56:31</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="discordbot">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">CharelessBot</div>
+									<p class="category text-black">Dıscord Botu</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a><img src="favicon.ico" width="500"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>CharelessBot; discord botlarına olan merakımdan ötürü kodlamayı denediğim kendi discord botumdur.
+														Şimdilik sadece döviz gösterme, ülkemizin 1 gün önceki korona
+														virüs vaka sayısını	gösterme, kura çekme, yazı tura ve zar atma
+														özellikleri olan basit bir bot olarak kodlanmıştır.<strong> &yardım </strong> komutuyla diğer komutları ve kullanım şekillerini
+														görebilirsiniz.
+													</p>
+													<p><strong>Sunucunuza eklemek için <a href="https://discord.com/api/oauth2/authorize?client_id=783278725802098730&permissions=8&scope=bot" target="_blank">tıklayın</a></strong></p>
+													<p>Çıkış Tarihi : <h7>02.12.2020 01:35:43</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>02.12.2020 01:35:43</h7></p>
+													<p>Sürüm : <h7>1.0</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="randomtools">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Rastgele Araçlar</div>
+									<p class="category text-black">For Wındows</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="randomtools.html"><img src="images/dice.ico"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong>Rastgele Araçlar; yazı tura, zar atma, taş kağıt makas seçme, rastgele numara seçme,
+														kura çekme, kronometre, hatırlatıcı, hesap makinesi, para sayar, liste hesaplama,
+														yüzdelik hesaplama, not tutma, rastgele şifre oluşturma, döviz kuru görüntüleme, döviz 
+														kuru çevirme, zaman çevirme, günlük koronavirüs tablosu, dış ip adresi gösterme, geri 
+														sayım, ideal kilo ve aritmetik işlemler özellikleri olan çok amaçlı bir programdır.
+														İnternet bağlantısı olmadan tüm özellikleri tek bir yerden kullanabilmeyi amaçlar.
+														Ancak döviz işlemleri, korona tablosu ve ip adresi öğrenmek için internet bağlantısı gerekir.	
+													</p>																
+													<p><strong>Son Sürümü İndir : <a href="https://github.com/chareless/RandomTools-for-Windows/archive/master.zip" target="_blank">https://github.com/chareless/RandomTools-for-Windows/archive/master.zip</a></strong></p>
+													<p>Çıkış Tarihi : <h7>25.07.2020 16:50:18</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>25.09.2022 17:30:47</h7></p>
+													<p>Sürüm : <h7>8.7</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="dijitalgunluk">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Dijital Günlük</div>
+									<p class="category text-black">For Wındows</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-6">
+												<div class="card-body">
+													<a href="dijitalgunluk.html"><img src="images/diary.ico"></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="card-body">
+													<p><strong>Açıklama : </strong> Dijital Günlük, kişinin kendi belirlediği kullanıcı adı ve şifreyle giriş yapabildiği bir günlük tutma programıdır. Yazdığınız
+														anılar sadece sizin bilgisayarınıza şifrelenerek kaydolur. Daha önce yazdığınız bir günü tekrar okuyabilir ve düzenleyebilirsiniz. 
+														Metninizin yazı boyutunu, programın giriş bilgilerini, dilini ve temasını değiştirebilirsiniz. Kayıtlarınızı yedekleyebilirsiniz ve geri yükleyebilirsiniz.
+													</p>
+													<p><strong>UYARI : Yedekleme veya geri yükleme yaparken masaüstünde "backup/backups" isimli başka bir klasörün olmadığından emin olunuz. Aksi takdirde veri kaybı yaşamanız mümkündür.</strong></p>
+													<p><strong>İndirme Linki : <a href="https://github.com/chareless/DigitalDiary-for-Windows/archive/master.zip" target="_blank">https://github.com/chareless/DigitalDiary-for-Windows/archive/master.zip</a></strong></p>
+													<p>Çıkış Tarihi : <h7>20.07.2020 06:09:43</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>08.06.2022 09:12:38</h7></p>
+													<p>Sürüm : <h7>1.6.3</h7></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="nesneyonelimli">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Nesne Yönelimli Analiz ve Tasarım Projesi</div>
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive embed-responsive-16by9" src="https://drive.google.com/file/d/12fztKXexXsTjrFRoVqNJhBh3QQNworxg/preview"></iframe>
+									</div>
+									<p><strong>Açıklama : </strong> Elimizde, soğutma sistemi kullanılabilir durumda olan, fakat denetleyicisi çalışmayan bir soğutucu bulunmaktadır. 
+										Bu soğutucuyu kontrol etmek üzere, bir akıllı cihaz üretilmiştir. Proje kapsamında, bu cihaz için geliştirilecek yazılımın analizini,
+										tasarımını ve gerçeklemesini yapılacaktır.
+									</p>
+									<p><strong>Video Linki : <a href="https://drive.google.com/file/d/12fztKXexXsTjrFRoVqNJhBh3QQNworxg/view" target="_blank">https://drive.google.com/file/d/12fztKXexXsTjrFRoVqNJhBh3QQNworxg/view</a></strong></p>
+									<p><h7>09.07.2020 12:36:15</h7></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="devam">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Dahası yeni projelerle..</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="yorum">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+									<div class="h4 mt-0 title">Yorum Köşesi</div>
+									<div id="disqus_thread"></div>
+									<script>
+
+										/**
+										*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+										*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+										/*
+										var disqus_config = function () {
+										this.page.url = http://www.saribayirdeniz.cf;  // Replace PAGE_URL with your page's canonical URL variable
+										this.page.identifier = http://www.saribayirdeniz.cf/blog.html // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+										};
+										*/
+										(function() { // DON'T EDIT BELOW THIS LINE
+											var d = document, s = d.createElement('script');
+											s.src = 'https://denizsaribayir.disqus.com/embed.js';
+											s.setAttribute('data-timestamp', +new Date());
+											(d.head || d.body).appendChild(s);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="ziyaretci">
+					<div class="container">
+						<div class="card" data-aos="fade-up" data-aos-offset="10">
+							<div class="row">
+								<div class="card-body col-lg-12 col-md-12">
+								<div class="h4 mt-0 title text-center">Ziyaretçi Sayısı</div>
+									<div class="h4 mt-0 title"><div align="center"><script language="Javascript" src="http://sa.sayaclar.com/c/s4.php?a=vyhsyjs&s=1a5"></script></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.facebook.com/chareless" target="_blank"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-globe btn btn-link " href="https://linktr.ee/mrchareless" target="_blank"><i class="fa fa-globe fa-2x " aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="https://www.instagram.com/mrchareless" target="_blank"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+			<div class="h4 title text-center">Deniz Sarıbayır</div>
+			<div class="text-center text-muted">
+				<p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+			</div>
+		</footer>
+		<script src="js/core/jquery.3.2.1.min.js"></script>
+		<script src="js/core/popper.min.js"></script>
+		<script src="js/core/bootstrap.min.js"></script>
+		<script src="js/now-ui-kit.js?v=1.1.0"></script>
+		<script src="js/aos.js"></script>
+		<script src="scripts/main.js"></script>
+		<script id="dsq-count-scr" src="//denizsaribayir.disqus.com/count.js" async></script>
+	</body>
+</html>
