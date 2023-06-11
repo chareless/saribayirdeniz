@@ -28,21 +28,6 @@ var visitCountSS2 = localStorage.getItem("pageSS2");
 var visitCountSS3 = localStorage.getItem("pageSS3");
 var visitCountTombala = localStorage.getItem("pageTombala");
 
-localStorage.setItem("pageBlog", visitCountBlog);
-localStorage.setItem("pageHome", visitCountAnasayfa);
-localStorage.setItem("pageHomeEng", visitCountAnasayfaENG);
-localStorage.setItem("pageHomeSW", visitCountAnasayfaSW);
-localStorage.setItem("pageArduino", visitCountArduino);
-localStorage.setItem("pageDijitalGunluk", visitCountDijitalGunluk);
-localStorage.setItem("pageInstaFollowers", visitCountInstaFollowers);
-localStorage.setItem("pageOyunlar", visitCountOyunlar);
-localStorage.setItem("pageRandomTools", visitCountRandomTools);
-localStorage.setItem("pageRandomToolsAndroid", visitCountRandomToolsAndroid);
-localStorage.setItem("pageSS", visitCountSS);
-localStorage.setItem("pageSS2", visitCountSS2);
-localStorage.setItem("pageSS3", visitCountSS3);
-localStorage.setItem("pageTombala", visitCountTombala);
-
 counterContainerBlog.innerHTML = visitCountBlog;
 counterContainerAnasayfa.innerHTML = visitCountAnasayfa;
 counterContainerAnasayfaENG.innerHTML = visitCountAnasayfaENG;
