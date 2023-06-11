@@ -1,6 +1,20 @@
 /* Center child elements */
 
-.website-counter {
+.website-counter-anasayfa,
+.website-counter-anasayfa-eng,
+.website-counter-anasayfa-sw,
+.website-counter-blog,
+.website-counter-arduino,
+.website-counter-dijitalgunluk,
+.website-counter-instafollowers,
+.website-counter-oyunlar,
+.website-counter-randomtools,
+.website-counter-randomtoolsandroid,
+.website-counter-ss,
+.website-counter-ss2,
+.website-counter-ss3,
+.website-counter-tombala
+ {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +24,21 @@
 
 
 /* Styles for website counter container */
-.website-counter {
+.website-counter-anasayfa,
+.website-counter-anasayfa-eng,
+.website-counter-anasayfa-sw,
+.website-counter-blog,
+.website-counter-arduino,
+.website-counter-dijitalgunluk,
+.website-counter-instafollowers,
+.website-counter-oyunlar,
+.website-counter-randomtools,
+.website-counter-randomtoolsandroid,
+.website-counter-ss,
+.website-counter-ss2,
+.website-counter-ss3,
+.website-counter-tombala
+ {
   background-color: #000000;
   height: 50px;
   width: 80px;
