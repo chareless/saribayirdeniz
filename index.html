@@ -24,8 +24,7 @@
 			src: url(fonts/aurebesh.ttf);
 		}
 	</style>
-	<script defer src="js/ziyaretciAnasayfa.js"></script>
-	<link rel="stylesheet" href="styles/counter.css" />
+	<script defer src="js/contact-form.js"></script>
 </head>
 
 <body id="top" style="background-image: url('images/bgsw.png');">
@@ -766,7 +765,11 @@
 													</div>
 												</div>
 												<form action="https://formspree.io/f/mzbkrqoq" method="POST"
-													target="_blank">
+													data-contact-form
+													data-sending="Mesajınız gönderiliyor..."
+													data-sending-label="Gönderiliyor..."
+													data-success="Mesajınız iletildi, teşekkürler! En kısa sürede size döneceğim."
+													data-error="Mesaj gönderilemedi. Lütfen tekrar deneyin veya doğrudan e-posta yazın.">
 													<p style="display:flex; justify-content:flex-start">
 														<i class="swg swg-galemp swg-2x"></i>
 														&nbsp;<strong> Görüşleriniz için.. </strong>&nbsp;&nbsp;&nbsp;
@@ -784,7 +787,7 @@
 														<div class="col">
 															<div class="input-group"><span class="input-group-addon"><i
 																		class="fa fa-file-text"></i></span>
-																<input class="form-control" type="text" name="Subject"
+																<input class="form-control" type="text" name="_subject"
 																	placeholder="Konu" required="required" />
 															</div>
 														</div>
@@ -811,6 +814,7 @@
 														<div class="col">
 															<button class="btn btn-primary"
 																type="submit">Gönder</button>
+															<p class="contact-form-status" role="status" aria-live="polite"></p>
 														</div>
 													</div>
 												</form>

@@ -24,8 +24,7 @@
 			src: url(fonts/aurebesh.ttf);
 		}
 	</style>
-	<script defer src="js/ziyaretciAnasayfaENG.js"></script>
-	<link rel="stylesheet" href="styles/counter.css" />
+	<script defer src="js/contact-form.js"></script>
 </head>
 
 <body id="top" style="background-image: url('images/bgsw.png');">
@@ -759,7 +758,11 @@
 													</div>
 												</div>
 												<form action="https://formspree.io/f/mzbkrqoq" method="POST"
-													target="_blank">
+													data-contact-form
+													data-sending="Sending your message..."
+													data-sending-label="Sending..."
+													data-success="Your message has been sent, thank you! I will get back to you soon."
+													data-error="Your message could not be sent. Please try again or email me directly.">
 													<p style="display:flex; justify-content:flex-start">
 														<i class="swg swg-galemp swg-2x"></i>
 														&nbsp;<strong> For your feedback.. </strong>&nbsp;&nbsp;&nbsp;
@@ -777,7 +780,7 @@
 														<div class="col">
 															<div class="input-group"><span class="input-group-addon"><i
 																		class="fa fa-file-text"></i></span>
-																<input class="form-control" type="text" name="Subject"
+																<input class="form-control" type="text" name="_subject"
 																	placeholder="Subject" required="required" />
 															</div>
 														</div>
@@ -803,6 +806,7 @@
 													<div class="row">
 														<div class="col">
 															<button class="btn btn-primary" type="submit">Send</button>
+															<p class="contact-form-status" role="status" aria-live="polite"></p>
 														</div>
 													</div>
 												</form>
