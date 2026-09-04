@@ -116,7 +116,7 @@
 								</div>
 								<div class="card-body col-lg-4 col-md-4">
 									<div class="h2 mt-0 title">Yenilikler</div>
-										<a href="#projectionroom"><p><h6>Projeksiyon Odası</h6></a>29.08.2026 08:46:51</p>
+										<a href="#projectionroom"><p><h6>Projeksiyon Odası v2.0</h6></a>05.09.2026 00:04:32</p>
 										<a href="#yazgelleague"><p><h6>Yazgel League AI_2.0</h6></a>08.08.2026 23:06:07</p>
 										<a href="#mystadiumstats"><p><h6>My Stadium Stats</h6></a>04.06.2026 22:21:09</p>
 										<a href="#profileproject"><p><h6>Profile Project</h6></a>02.06.2026 22:46:44</p>
@@ -146,17 +146,38 @@
 										<div class="col-sm-6">
 											<div class="row">
 												<div class="card-body">
-													<p><strong>Açıklama : </strong>Projeksiyon odası, IMDb'deki puanlarınızı bir izleme arşivi panosuna çeviren, ASP.NET Core MVC ile yazılmış bir web uygulaması. 
-													IMDb'nin kendi "Your Ratings → Export" dosyasını yüklüyorsunuz; uygulama toplam izleme sürenizi, tür ve yönetmen kırılımlarınızı, puanlama alışkanlıklarınızı 
-													ve kalabalıktan nerede ayrıştığınızı çıkarıyor. Projenin asıl meselesi ise şu: IMDb'nin dizi düzeyindeki süre bilgisi çoğu zaman yanlış — 11 dakikalık bir 
-													çizgi filmi 23 dakika sayıyor, Regular Show'un 94 saatlik gerçek süresini 48 saat gösteriyor. Bu yüzden bölüm süreleri IMDb'nin resmî veri setlerinden ayrıca 
-													toplanıp ölçülüyor, ölçüm nominal değeri eziyor, eksik bölümler ise küçük örneklem yanıltmasın diye nominal oranla tamamlanıyor. Arka planda 240 bin diziye ait 
-													süre tablosu ve 98 bin başlığa ait oyuncu kadrosu duruyor. Pano üzerindeki her yorum — izleyici profili, puanlama karakteri, Beş Faktör göstergeleri — elle yazılmış değil, arşivden hesaplanıyor ve veri yetersizse cümle hiç kurulmuyor.
-														<b>Bu proje tamamen Yapay Zeka (AI) tarafından tasarlanmış, geliştirilmiş ve kodlanmıştır. Mimarisi, tüm özellikleri, veri modelleri, controller'ları, view'ları ve hatta veritabanı migrasyonları AI asistanı tarafından oluşturulmuştur.</b>
-													</p>
+												<p><strong>Açıklama : </strong><a href="https://projectionroom.runasp.net" target="_blank"
+rel="noopener">Projeksiyon Odası</a>, IMDb'deki puanlarınızı bir izleme arşivi panosuna çeviren,
+ASP.NET Core MVC ile yazılmış çok kullanıcılı bir web uygulaması. IMDb'nin kendi "Your Ratings →
+Export" dosyasını yüklüyorsunuz; uygulama toplam izleme sürenizi, tür ve yönetmen
+kırılımlarınızı, puanlama alışkanlıklarınızı ve kalabalıktan nerede ayrıştığınızı çıkarıyor. Site
+IMDb'ye hiç bağlanmıyor, kazıma yapmıyor. Projenin asıl meselesi ise ne bilmediğini söylemek:
+dışa aktarma bir dizinin kaç bölüm olduğunu içermiyor, süre sütunu da bölüm başına nominal bir
+değer. Bölüm sayıları bu yüzden lisansı açık iki kaynaktan alınıyor — önce Wikidata (kamu malı,
+CC0), orada yoksa TVmaze (CC BY-SA, atıf zorunlu); ölçülen birleşik kapsama %97. Çıkan toplam bir
+<em>tahmin</em> ve arayüz bunu gizlemiyor: sayıların önünde ≈ duruyor, her satır değerin hangi
+kaynaktan geldiğini yazıyor, bulunamayan başlıklar toplama hiç katılmıyor. Kaynak yanılıyorsa ya
+da susuyorsa kendi değerinizi girebiliyorsunuz; girdiğiniz değer yalnızca sizin panonuzu
+etkiliyor, ortak tabloya yazılmıyor ve arşivinizi yeniden yüklediğinizde korunuyor. Pano
+üzerindeki her yorum — izleyici profili, puanlama karakteri, Beş Faktör göstergeleri,
+benzediğiniz karakter — elle yazılmış değil, arşivden hesaplanıyor ve veri yetersizse cümle hiç
+kurulmuyor; isteğe bağlı bir yapay zeka sentezi bu kartları tek yoruma bağlıyor, sayıları yine
+sunucu hesaplıyor, model yalnızca yorumluyor. Profilini herkese açan kullanıcılar için bir
+<strong>eşleştirme</strong> var: ortak başlık oranı, aynı başlıklara verilen puanların uyumu ve
+tür dağılımı karşılaştırılıp izleme profili size benzeyenler öneriliyor — en az sekiz ortak
+başlık şartıyla, mesajlaşma olmadan, yalnızca profil görüntüleme. Hesap tarafında e-posta, doğum
+tarihi ve doğum saati veritabanında <strong>AES-256-GCM</strong> ile şifreli tutuluyor, şifreler
+ve kurtarma kodları PBKDF2 ile hash'leniyor; veritabanı paylaşımlı bir barındırmada olduğu için
+bu ayrım bilinçli. Kayıt sırasında <strong>KVKK aydınlatma metni ve açık rıza onayı zorunlu</strong>
+ve her onay, onaylandığı metnin tamamıyla birlikte kanıt olarak saklanıyor; ayrı bir gizlilik
+politikası sayfası hangi verinin neden işlendiğini, nerede tutulduğunu ve hesabınızı
+sildiğinizde neyin silinip neyin kaldığını tek tek sayıyor.
+<br><br>
+<strong>Canlı : </strong><a href="https://projectionroom.runasp.net" target="_blank"
+rel="noopener">projectionroom.runasp.net</a></p>
 													<p>Çıkış Tarihi : <h7>29.08.2026 08:46:51</h7></p>
-													<p>Son Değiştirilme Tarihi : <h7>29.08.2026 08:46:51</h7></p>
-													<p>Sürüm : <h7>1.0</h7></p>
+													<p>Son Değiştirilme Tarihi : <h7>05.09.2026 00:04:32</h7></p>
+													<p>Sürüm : <h7>2.0</h7></p>
 												</div>
 											</div>
 										</div>
@@ -188,7 +209,6 @@
 														Kullanıcılar, kendi istedikleri maçların skorunu ve gol istatistiklerini kendileri girerek takip edebilirler.
 														Girilen maçlar sonucunda bir puan tablosu oluşturulur ve kullanıcılar bu tablo üzerinden kendi performanslarını takip edip karşılaştırabilirler.
 														VAR Chat ile tüm verilere anında ve hızlı bir şekilde ulaşılabilir ve maç ekleme, sezon oluşturma işlemleri yapılabilir.
-														<b>Bu proje tamamen Yapay Zeka (AI) tarafından tasarlanmış, geliştirilmiş ve kodlanmıştır. Mimarisi, tüm özellikleri, veri modelleri, controller'ları, view'ları ve hatta veritabanı migrasyonları AI asistanı tarafından oluşturulmuştur.</b>
 													</p>
 													<p><strong>Proje Kodları : <a href="https://github.com/chareless/YazgelLeague" target="_blank">https://github.com/chareless/YazgelLeague</a></strong></p>
 													<p>Çıkış Tarihi : <h7>10.06.2026 23:02:51</h7></p>
@@ -225,7 +245,6 @@
 														Kullanıcılar, kendi istedikleri maçların skorunu ve gol istatistiklerini kendileri girerek takip edebilirler.
 														Girilen maçlar kullanıcıların profil sayfalarında listelenir ve istatistikler görsel olarak sunulur. 
 														Projenin canlı bir sürümü mevcut değildir. Projeyi incelemek ve kodlarına erişmek için GitHub bağlantısını kullanabilirsiniz.
-														<b>Bu proje tamamen Yapay Zeka (AI) tarafından tasarlanmış, geliştirilmiş ve kodlanmıştır. Mimarisi, tüm özellikleri, veri modelleri, controller'ları, view'ları ve hatta veritabanı migrasyonları AI asistanı tarafından oluşturulmuştur.</b>
 													</p>
 													<p><strong>Proje Kodları : <a href="https://github.com/chareless/MyStadiumStats" target="_blank">https://github.com/chareless/MyStadiumStats</a></strong></p>
 													<p>Çıkış Tarihi : <h7>04.06.2026 22:21:09</h7></p>
